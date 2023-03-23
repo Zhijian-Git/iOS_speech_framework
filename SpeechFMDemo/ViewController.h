@@ -7,8 +7,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Speech/Speech.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController <SFSpeechRecognizerDelegate>
+@interface ViewController : UIViewController <SFSpeechRecognizerDelegate, AVCaptureAudioDataOutputSampleBufferDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
@@ -19,6 +20,15 @@
 @property (nonatomic, strong) SFSpeechRecognitionTask *recognitionTask;
 @property (nonatomic, strong) AVAudioEngine *audioEngine;
 
+@property (strong, nonatomic) AVCaptureSession *captureSession;
+@property (strong, nonatomic) AVCaptureDeviceInput *audioInput;
+@property (strong, nonatomic) AVCaptureAudioDataOutput *audioOutput;
+@property (nonatomic) float currentVolume;
+
 - (IBAction)startButtonTapped:(id)sender;
+
+- (void)startCaptureSession;
+- (void)stopCaptureSession;
+- (void)processAudioBuffer:(CMSampleBufferRef)sampleBuffer;
 
 @end

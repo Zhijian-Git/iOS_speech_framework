@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import <Speech/Speech.h>
-#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
 
@@ -71,14 +70,98 @@
 
 - (IBAction)startButtonTapped:(id)sender {
     if (_audioEngine.isRunning) {
-        [_audioEngine stop];
-        [_recognitionRequest endAudio];
+        [self stopRecording];
+        [self stopCaptureSession];
+
         _startButton.enabled = NO;
         [_startButton setTitle:@"Stopping" forState:UIControlStateDisabled];
     } else {
+        [self startCaptureSession];
         [self startRecording];
+
         [_startButton setTitle:@"Stop" forState:UIControlStateNormal];
     }
+}
+
+- (void)startCaptureSession {
+    NSError *error = nil;
+    self.captureSession = [[AVCaptureSession alloc] init];
+    self.captureSession.sessionPreset = AVCaptureSessionPresetHigh;
+    
+    AVCaptureDevice *audioDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeAudio];
+    self.audioInput = [AVCaptureDeviceInput deviceInputWithDevice:audioDevice error:&error];
+    if (error) {
+        NSLog(@"Failed to create audio input device: %@", error);
+        return;
+    }
+    if ([self.captureSession canAddInput:self.audioInput]) {
+        [self.captureSession addInput:self.audioInput];
+    }
+    
+    self.audioOutput = [[AVCaptureAudioDataOutput alloc] init];
+    dispatch_queue_t audioQueue = dispatch_queue_create("AudioCaptureQueue", DISPATCH_QUEUE_SERIAL);
+    [self.audioOutput setSampleBufferDelegate:self queue:audioQueue];
+    if ([self.captureSession canAddOutput:self.audioOutput]) {
+        [self.captureSession addOutput:self.audioOutput];
+    }
+    
+    [self.captureSession startRunning];
+}
+
+- (void)stopCaptureSession {
+    [self.captureSession stopRunning];
+}
+
+- (void)processAudioBuffer:(CMSampleBufferRef)sampleBuffer {
+    if(![self.audioInput.device hasMediaType:AVMediaTypeAudio]) {
+//    if (!self.audioInput.device.hasMediaType:AVMediaTypeAudio) {
+        NSLog(@"Audio input device is not capturing audio data.");
+        return;
+    }
+    float volume = [self volumeLevelFromSampleBuffer:sampleBuffer];
+    self.currentVolume = volume;
+}
+
+- (float)volumeLevelFromSampleBuffer:(CMSampleBufferRef)sampleBuffer {
+    // // 获取音频输入设备的平均音量
+    // CFArrayRef channelArray = CMSampleBufferGetSampleAttachmentsArray(sampleBuffer, true);
+    // CFDictionaryRef channelDict = CFArrayGetValueAtIndex(channelArray, 0);
+    // const void *peakValue;
+    // OSStatus status = CMAttachmentGetPropert(channelDict, kCMSampleAttachmentKey_ChannelLevelMeteringInfo, &peakValue);
+    // if (status == noErr) {
+    //     const struct AudioChannelLevel *audioChannelLevels = peakValue;
+    //     float peak = audioChannelLevels[0].mPeakPower;
+    //     float average = audioChannelLevels[0].mAveragePower;
+    //     return average;
+    // }
+
+    // 获取音频样本数据
+    CMBlockBufferRef audioBuffer = CMSampleBufferGetDataBuffer(sampleBuffer);
+    size_t lengthAtOffset;
+    size_t totalLength;
+    char *data;
+
+    if (CMBlockBufferGetDataPointer(audioBuffer, 0, &lengthAtOffset, &totalLength, &data) == noErr) {
+        // 计算音量大小
+        float volume = 0;
+        for (int i = 0; i < totalLength; i += 2) {
+            int16_t sample = *(int16_t *)(data + i);
+            volume += (sample * sample);
+        }
+
+        volume /= totalLength;
+        volume = sqrtf(volume);
+
+        NSLog(@"音量大小: %f", volume);
+        return volume;
+    }else {
+        NSLog(@"获取音频样本数据失败");
+    }
+    return 0.0;
+}
+
+- (void)captureOutput:(AVCaptureOutput *)output didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
+    [self processAudioBuffer:sampleBuffer];
 }
 
 - (void)startRecording {
@@ -86,6 +169,8 @@
         [_recognitionTask cancel];
         _recognitionTask = nil;
     }
+
+    self.currentVolume = 0.0;
     
     NSError *error;
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
@@ -121,6 +206,13 @@
     [_audioEngine prepare];
     [_audioEngine startAndReturnError:&error];
     _statusLabel.text = @"Say something, I'm listening!";
+}
+
+- (void)stopRecording {
+    self.currentVolume = 0.0;
+
+    [_audioEngine stop];
+    [_recognitionRequest endAudio];
 }
 
 #pragma mark - SFSpeechRecognizerDelegate
