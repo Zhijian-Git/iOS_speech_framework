@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>要在游戏中扫描二维码，拍照上传自定义头像，请点击"好"。</string>
 </dict>
 </plist>

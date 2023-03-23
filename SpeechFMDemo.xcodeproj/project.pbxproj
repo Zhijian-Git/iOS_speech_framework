@@ -17,6 +17,9 @@
 		6CDDEE1A29CC3BC500A0F3DA /* SpeechFMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE1929CC3BC500A0F3DA /* SpeechFMDemoTests.m */; };
 		6CDDEE2429CC3BC500A0F3DA /* SpeechFMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE2329CC3BC500A0F3DA /* SpeechFMDemoUITests.m */; };
 		6CDDEE2629CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE2529CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m */; };
+		6CDDEE3429CC3E1D00A0F3DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDDEE3329CC3E1D00A0F3DA /* UIKit.framework */; };
+		6CDDEE3629CC3E2600A0F3DA /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDDEE3529CC3E2600A0F3DA /* Speech.framework */; };
+		6CDDEE3829CC3E2E00A0F3DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDDEE3729CC3E2E00A0F3DA /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		6CDDEE1F29CC3BC500A0F3DA /* SpeechFMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechFMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDDEE2329CC3BC500A0F3DA /* SpeechFMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechFMDemoUITests.m; sourceTree = "<group>"; };
 		6CDDEE2529CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechFMDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		6CDDEE3329CC3E1D00A0F3DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6CDDEE3529CC3E2600A0F3DA /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		6CDDEE3729CC3E2E00A0F3DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDDEE3829CC3E2E00A0F3DA /* AVFoundation.framework in Frameworks */,
+				6CDDEE3629CC3E2600A0F3DA /* Speech.framework in Frameworks */,
+				6CDDEE3429CC3E1D00A0F3DA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +97,7 @@
 				6CDDEE1829CC3BC500A0F3DA /* SpeechFMDemoTests */,
 				6CDDEE2229CC3BC500A0F3DA /* SpeechFMDemoUITests */,
 				6CDDEDFB29CC3BC400A0F3DA /* Products */,
+				6CDDEE3229CC3E1D00A0F3DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +144,16 @@
 				6CDDEE2529CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m */,
 			);
 			path = SpeechFMDemoUITests;
+			sourceTree = "<group>";
+		};
+		6CDDEE3229CC3E1D00A0F3DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDDEE3729CC3E2E00A0F3DA /* AVFoundation.framework */,
+				6CDDEE3529CC3E2600A0F3DA /* Speech.framework */,
+				6CDDEE3329CC3E1D00A0F3DA /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +465,7 @@
 				DEVELOPMENT_TEAM = RRH77EDT8T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeechFMDemo/Info.plist;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "needs zj access to speech recognition to provide transcription functionality.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +493,7 @@
 				DEVELOPMENT_TEAM = RRH77EDT8T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeechFMDemo/Info.plist;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "needs zj access to speech recognition to provide transcription functionality.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
