@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CDDEDFF29CC3BC400A0F3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEDFE29CC3BC400A0F3DA /* AppDelegate.m */; };
+		6CDDEE0229CC3BC400A0F3DA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE0129CC3BC400A0F3DA /* SceneDelegate.m */; };
+		6CDDEE0529CC3BC400A0F3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE0429CC3BC400A0F3DA /* ViewController.m */; };
+		6CDDEE0829CC3BC400A0F3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDEE0629CC3BC400A0F3DA /* Main.storyboard */; };
+		6CDDEE0A29CC3BC500A0F3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDEE0929CC3BC500A0F3DA /* Assets.xcassets */; };
+		6CDDEE0D29CC3BC500A0F3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CDDEE0B29CC3BC500A0F3DA /* LaunchScreen.storyboard */; };
+		6CDDEE1029CC3BC500A0F3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE0F29CC3BC500A0F3DA /* main.m */; };
+		6CDDEE1A29CC3BC500A0F3DA /* SpeechFMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE1929CC3BC500A0F3DA /* SpeechFMDemoTests.m */; };
+		6CDDEE2429CC3BC500A0F3DA /* SpeechFMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE2329CC3BC500A0F3DA /* SpeechFMDemoUITests.m */; };
+		6CDDEE2629CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDDEE2529CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CDDEE1629CC3BC500A0F3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CDDEDF229CC3BC400A0F3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDDEDF929CC3BC400A0F3DA;
+			remoteInfo = SpeechFMDemo;
+		};
+		6CDDEE2029CC3BC500A0F3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CDDEDF229CC3BC400A0F3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDDEDF929CC3BC400A0F3DA;
+			remoteInfo = SpeechFMDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CDDEDFA29CC3BC400A0F3DA /* SpeechFMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechFMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDDEDFD29CC3BC400A0F3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CDDEDFE29CC3BC400A0F3DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CDDEE0029CC3BC400A0F3DA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		6CDDEE0129CC3BC400A0F3DA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		6CDDEE0329CC3BC400A0F3DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6CDDEE0429CC3BC400A0F3DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6CDDEE0729CC3BC400A0F3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CDDEE0929CC3BC500A0F3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CDDEE0C29CC3BC500A0F3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CDDEE0E29CC3BC500A0F3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CDDEE0F29CC3BC500A0F3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CDDEE1529CC3BC500A0F3DA /* SpeechFMDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechFMDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDDEE1929CC3BC500A0F3DA /* SpeechFMDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechFMDemoTests.m; sourceTree = "<group>"; };
+		6CDDEE1F29CC3BC500A0F3DA /* SpeechFMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechFMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDDEE2329CC3BC500A0F3DA /* SpeechFMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechFMDemoUITests.m; sourceTree = "<group>"; };
+		6CDDEE2529CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechFMDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CDDEDF729CC3BC400A0F3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDDEE1229CC3BC500A0F3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDDEE1C29CC3BC500A0F3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CDDEDF129CC3BC400A0F3DA = {
+			isa = PBXGroup;
+			children = (
+				6CDDEDFC29CC3BC400A0F3DA /* SpeechFMDemo */,
+				6CDDEE1829CC3BC500A0F3DA /* SpeechFMDemoTests */,
+				6CDDEE2229CC3BC500A0F3DA /* SpeechFMDemoUITests */,
+				6CDDEDFB29CC3BC400A0F3DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CDDEDFB29CC3BC400A0F3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CDDEDFA29CC3BC400A0F3DA /* SpeechFMDemo.app */,
+				6CDDEE1529CC3BC500A0F3DA /* SpeechFMDemoTests.xctest */,
+				6CDDEE1F29CC3BC500A0F3DA /* SpeechFMDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CDDEDFC29CC3BC400A0F3DA /* SpeechFMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6CDDEDFD29CC3BC400A0F3DA /* AppDelegate.h */,
+				6CDDEDFE29CC3BC400A0F3DA /* AppDelegate.m */,
+				6CDDEE0029CC3BC400A0F3DA /* SceneDelegate.h */,
+				6CDDEE0129CC3BC400A0F3DA /* SceneDelegate.m */,
+				6CDDEE0329CC3BC400A0F3DA /* ViewController.h */,
+				6CDDEE0429CC3BC400A0F3DA /* ViewController.m */,
+				6CDDEE0629CC3BC400A0F3DA /* Main.storyboard */,
+				6CDDEE0929CC3BC500A0F3DA /* Assets.xcassets */,
+				6CDDEE0B29CC3BC500A0F3DA /* LaunchScreen.storyboard */,
+				6CDDEE0E29CC3BC500A0F3DA /* Info.plist */,
+				6CDDEE0F29CC3BC500A0F3DA /* main.m */,
+			);
+			path = SpeechFMDemo;
+			sourceTree = "<group>";
+		};
+		6CDDEE1829CC3BC500A0F3DA /* SpeechFMDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CDDEE1929CC3BC500A0F3DA /* SpeechFMDemoTests.m */,
+			);
+			path = SpeechFMDemoTests;
+			sourceTree = "<group>";
+		};
+		6CDDEE2229CC3BC500A0F3DA /* SpeechFMDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CDDEE2329CC3BC500A0F3DA /* SpeechFMDemoUITests.m */,
+				6CDDEE2529CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m */,
+			);
+			path = SpeechFMDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CDDEDF929CC3BC400A0F3DA /* SpeechFMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDDEE2929CC3BC500A0F3DA /* Build configuration list for PBXNativeTarget "SpeechFMDemo" */;
+			buildPhases = (
+				6CDDEDF629CC3BC400A0F3DA /* Sources */,
+				6CDDEDF729CC3BC400A0F3DA /* Frameworks */,
+				6CDDEDF829CC3BC400A0F3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechFMDemo;
+			productName = SpeechFMDemo;
+			productReference = 6CDDEDFA29CC3BC400A0F3DA /* SpeechFMDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CDDEE1429CC3BC500A0F3DA /* SpeechFMDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDDEE2C29CC3BC500A0F3DA /* Build configuration list for PBXNativeTarget "SpeechFMDemoTests" */;
+			buildPhases = (
+				6CDDEE1129CC3BC500A0F3DA /* Sources */,
+				6CDDEE1229CC3BC500A0F3DA /* Frameworks */,
+				6CDDEE1329CC3BC500A0F3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CDDEE1729CC3BC500A0F3DA /* PBXTargetDependency */,
+			);
+			name = SpeechFMDemoTests;
+			productName = SpeechFMDemoTests;
+			productReference = 6CDDEE1529CC3BC500A0F3DA /* SpeechFMDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CDDEE1E29CC3BC500A0F3DA /* SpeechFMDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDDEE2F29CC3BC500A0F3DA /* Build configuration list for PBXNativeTarget "SpeechFMDemoUITests" */;
+			buildPhases = (
+				6CDDEE1B29CC3BC500A0F3DA /* Sources */,
+				6CDDEE1C29CC3BC500A0F3DA /* Frameworks */,
+				6CDDEE1D29CC3BC500A0F3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CDDEE2129CC3BC500A0F3DA /* PBXTargetDependency */,
+			);
+			name = SpeechFMDemoUITests;
+			productName = SpeechFMDemoUITests;
+			productReference = 6CDDEE1F29CC3BC500A0F3DA /* SpeechFMDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CDDEDF229CC3BC400A0F3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6CDDEDF929CC3BC400A0F3DA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6CDDEE1429CC3BC500A0F3DA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6CDDEDF929CC3BC400A0F3DA;
+					};
+					6CDDEE1E29CC3BC500A0F3DA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6CDDEDF929CC3BC400A0F3DA;
+					};
+				};
+			};
+			buildConfigurationList = 6CDDEDF529CC3BC400A0F3DA /* Build configuration list for PBXProject "SpeechFMDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CDDEDF129CC3BC400A0F3DA;
+			productRefGroup = 6CDDEDFB29CC3BC400A0F3DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CDDEDF929CC3BC400A0F3DA /* SpeechFMDemo */,
+				6CDDEE1429CC3BC500A0F3DA /* SpeechFMDemoTests */,
+				6CDDEE1E29CC3BC500A0F3DA /* SpeechFMDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CDDEDF829CC3BC400A0F3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDDEE0D29CC3BC500A0F3DA /* LaunchScreen.storyboard in Resources */,
+				6CDDEE0A29CC3BC500A0F3DA /* Assets.xcassets in Resources */,
+				6CDDEE0829CC3BC400A0F3DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDDEE1329CC3BC500A0F3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDDEE1D29CC3BC500A0F3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CDDEDF629CC3BC400A0F3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDDEE0529CC3BC400A0F3DA /* ViewController.m in Sources */,
+				6CDDEDFF29CC3BC400A0F3DA /* AppDelegate.m in Sources */,
+				6CDDEE1029CC3BC500A0F3DA /* main.m in Sources */,
+				6CDDEE0229CC3BC400A0F3DA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDDEE1129CC3BC500A0F3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDDEE1A29CC3BC500A0F3DA /* SpeechFMDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDDEE1B29CC3BC500A0F3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDDEE2629CC3BC500A0F3DA /* SpeechFMDemoUITestsLaunchTests.m in Sources */,
+				6CDDEE2429CC3BC500A0F3DA /* SpeechFMDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CDDEE1729CC3BC500A0F3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CDDEDF929CC3BC400A0F3DA /* SpeechFMDemo */;
+			targetProxy = 6CDDEE1629CC3BC500A0F3DA /* PBXContainerItemProxy */;
+		};
+		6CDDEE2129CC3BC500A0F3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CDDEDF929CC3BC400A0F3DA /* SpeechFMDemo */;
+			targetProxy = 6CDDEE2029CC3BC500A0F3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CDDEE0629CC3BC400A0F3DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDDEE0729CC3BC400A0F3DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CDDEE0B29CC3BC500A0F3DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDDEE0C29CC3BC500A0F3DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CDDEE2729CC3BC500A0F3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6CDDEE2829CC3BC500A0F3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CDDEE2A29CC3BC500A0F3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RRH77EDT8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeechFMDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.test.SpeechFMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CDDEE2B29CC3BC500A0F3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RRH77EDT8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeechFMDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.test.SpeechFMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CDDEE2D29CC3BC500A0F3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RRH77EDT8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.test.SpeechFMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechFMDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpeechFMDemo";
+			};
+			name = Debug;
+		};
+		6CDDEE2E29CC3BC500A0F3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RRH77EDT8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.test.SpeechFMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechFMDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpeechFMDemo";
+			};
+			name = Release;
+		};
+		6CDDEE3029CC3BC500A0F3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RRH77EDT8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.test.SpeechFMDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpeechFMDemo;
+			};
+			name = Debug;
+		};
+		6CDDEE3129CC3BC500A0F3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RRH77EDT8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.test.SpeechFMDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpeechFMDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CDDEDF529CC3BC400A0F3DA /* Build configuration list for PBXProject "SpeechFMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDDEE2729CC3BC500A0F3DA /* Debug */,
+				6CDDEE2829CC3BC500A0F3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDDEE2929CC3BC500A0F3DA /* Build configuration list for PBXNativeTarget "SpeechFMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDDEE2A29CC3BC500A0F3DA /* Debug */,
+				6CDDEE2B29CC3BC500A0F3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDDEE2C29CC3BC500A0F3DA /* Build configuration list for PBXNativeTarget "SpeechFMDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDDEE2D29CC3BC500A0F3DA /* Debug */,
+				6CDDEE2E29CC3BC500A0F3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDDEE2F29CC3BC500A0F3DA /* Build configuration list for PBXNativeTarget "SpeechFMDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDDEE3029CC3BC500A0F3DA /* Debug */,
+				6CDDEE3129CC3BC500A0F3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CDDEDF229CC3BC400A0F3DA /* Project object */;
+}
