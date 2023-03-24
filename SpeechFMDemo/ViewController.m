@@ -114,7 +114,6 @@
 
 - (void)processAudioBuffer:(CMSampleBufferRef)sampleBuffer {
     if(![self.audioInput.device hasMediaType:AVMediaTypeAudio]) {
-//    if (!self.audioInput.device.hasMediaType:AVMediaTypeAudio) {
         NSLog(@"Audio input device is not capturing audio data.");
         return;
     }
